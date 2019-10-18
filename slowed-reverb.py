@@ -22,6 +22,7 @@ Options:
     (-g | --gif)          <gif file>     the gif to loop
     (-o | --output-path)  <path>         where to save the output
     (-h | --help)                        display this message
+Example: python3 slowed-reverb.py -a song.mp3 -g video.gif -o slowed-reverb.mp4
 """)
 
 def main():
@@ -41,7 +42,7 @@ def main():
 
     audio_path = ""
     gif_path = ""
-    output_path = ""
+    output_path = "output/slowed-reverb.mp4"
 
     # parse options
     for o, v in opts:
