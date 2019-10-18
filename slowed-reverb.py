@@ -18,10 +18,10 @@ def print_usage():
     sys.stderr.write(
 """Usage: python3 slowed-reverb.py [options]
 Options:
-    (-a | --audio)        <audio file>   the audio file to use
-    (-g | --gif)          <gif file>     the gif to loop
-    (-o | --output-path)  <path>         where to save the output
-    (-h | --help)                        display this message
+    (-a | --audio)         <audio file>   the audio file to use
+    (-g | --gif)           <gif file>     the gif to loop
+    (-o | --output-path)   <path>         where to save the output
+    (-h | --help)                         display this message
 Example: python3 slowed-reverb.py -a song.mp3 -g video.gif -o slowed-reverb.mp4
 """)
 
