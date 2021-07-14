@@ -78,11 +78,15 @@ def main():
     # path to temporarily store the audio
     temp_audio_path = "output/temp.mp3"
 
+    print("Processing audio...")
+
     # apply the effects, save file
     fx(audio_path, temp_audio_path)
 
     # load audio file
     audio_clip = mp.AudioFileClip(temp_audio_path)
+
+    print("Processing video...")
 
     # load video
     video_clip = mp.VideoFileClip(gif_path)
@@ -93,6 +97,8 @@ def main():
 
     # add the audio to the video
     video_clip3 = video_clip2.set_audio(audio_clip)
+
+    print("Saving video...")
 
     # save result
     video_clip3.write_videofile(output_path, verbose=False, logger=None)

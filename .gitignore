@@ -1,7 +1,14 @@
 .vscode
 
-input
-output
+*.exe
+*.mp3
+*.gif
+*.mp4
+*.wav
+
+!sample.gif
+!sample.mp3
+!sample-output.mp4
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
